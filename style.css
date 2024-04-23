@@ -346,8 +346,12 @@ input[type='checkbox']:checked + .label-for-check::before{
         max-width: calc(90% + (75 - 90) * ((100vw - 320px) / (1200 - 320)));   
     }
 
-    #footer, #header-date {
+    #footer{
         font-size: calc(30px + (100 - 30) * ((100vw - 320px) / (1200 - 320)));       
+    }
+
+    #header-date {
+        font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (1200 - 320)));       
     }
 
     .header {
@@ -404,7 +408,7 @@ input[type='checkbox']:checked + .label-for-check::before{
     } 
 
     .form-example {
-        margin: calc(0px + (50 - 0) * ((100vw - 320px) / (1200 - 320)));
+        margin: calc(10px + (50 - 10) * ((100vw - 320px) / (1200 - 320)));
     }
 
 }
