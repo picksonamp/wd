@@ -256,6 +256,10 @@ hr {
     margin-top: 0px;
 }
 
+.form-example {
+    margin: 50px;
+}
+
 
 /* стилизуем radio */
 
@@ -332,8 +336,13 @@ input[type='checkbox']:checked + .label-for-check::before{
 /* адаптивная верстка */
 
 @media (max-width: 1200px) {
+
     * {
         font-size: calc(13px + (19 - 13) * ((100vw - 320px) / (1200 - 320)));
+    }
+
+    body {
+        max-width: calc(90% + (75 - 90) * ((100vw - 320px) / (1200 - 320)));   
     }
 
     #footer, #header-date {
@@ -393,6 +402,10 @@ input[type='checkbox']:checked + .label-for-check::before{
         padding-top: calc(0px + (70 - 0) * ((100vw - 320px) / (1200 - 320)));
     } 
 
+    .form-example {
+        margin: calc(0px + (50 - 0) * ((100vw - 320px) / (1200 - 320)));
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -402,3 +415,17 @@ input[type='checkbox']:checked + .label-for-check::before{
     }
     
 }
+
+/* 123 */
+
+
+  button,input,optgroup,select,textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
+  button,input {
+    overflow: visible;
+  }
+  
