@@ -418,7 +418,7 @@ input[type='checkbox']:checked + .label-for-check::before{
     }
 
     .massive-text, .div-image-text {
-        margin-bottom: calc(10px + (40 - 10) * ((100vw - 320px) / (1200 - 320)));        
+        margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320)));        
     }  
 
     #headerDiv{
