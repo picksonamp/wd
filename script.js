@@ -1,4 +1,24 @@
 
+const url = 'https://raw.githubusercontent.com/picksonamp/wd/main/json.json'
+
+function sendRequest(url){
+  
+    return fetch(url)
+    .then(response => {return response.json()})
+}
+
+function postRequest(method, url, body){
+  
+    return fetch(method, url, {
+        method: method,
+        body: JSON.stringify(body),
+        headers: {}
+    })
+    .then(response => {return response.json()})
+}
+
+
+
 let i = 0;
 
 let end = new Date('2024-07-05T15:45:00.417')
@@ -96,16 +116,10 @@ sendButton.onclick = () => {
 
     if (name === '') return alert('Введите имя!')
 
-    let presence = document.getElementById('presense').checked
+    let presence = (document.getElementById('presense').checked) ? 'придет' : 'не придет'
 
-    if (!presence) {
-        localStorage.setItem(localStorage.length + 1, `${name} не придет`)
-        console.log(localStorage)
-        return alert('Данные отправлены!')  
-    }
-    else {
     
-    let reultVines =`${name} придет! Будет пить: `
+    let reultVines =`${name} Будет пить: `
 
     let redDry = document.getElementById('RedDry').checked
     let redSemi = document.getElementById('RedSemi').checked
@@ -125,13 +139,28 @@ sendButton.onclick = () => {
     reultVines += (custom === null) ? '' : `${custom} |`
 
     localStorage.setItem(++localStorage.length, reultVines)
+    
+    let parms = {
+        name: name,
+        presence: presence,
+        message: reultVines,
+    }
+
+    emailjs.send('service_ohydsyk',"template_3p29qxi", parms).then(alert('Данные отправлены!'))
+
+    // postRequest('POST', url, result)
+    // .then(data => console.log(data))
+
+    // sendRequest(url)
+    // .then(data => console.log(data))
   
     
     console.log(localStorage)
 
-    alert('Данные отправлены!')
+    // alert('Данные отправлены!')
 
     
-    }
+    
 
 }
+

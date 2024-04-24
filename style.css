@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap');
 @import url(Helvetica.ttf);
 
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap');
+
 @font-face {
-	font-family: 'Caravan'; 
-	src: url(Caravan.ttf); 
+	font-family: 'Czizh'; 
+	src: url(Czizh.ttf); 
 }
+
+
 
 * {
     font-family: "Tenor Sans", sans-serif;
@@ -14,7 +18,7 @@
 /* СТИЛИЗАЦИЯ ССЫЛОК */
 
 a{
-    text-decoration: none;
+    text-decoration: underline;
     color: #000000;
 }
 
@@ -74,9 +78,11 @@ span {
 }
 
 .header-mini {
+    font-family: "Tenor Sans" !important;
+    font-size: 24px;
+    font-weight: 100;
     text-align: center;
     font-weight: 100;
-    font-size: 27px;
     margin: 0px;
 }
 
@@ -174,6 +180,7 @@ hr {
 #name {
     background-color: rgba(0, 0, 0, 0);
     font-family: "Tenor Sans", sans-serif;
+    width: 250px;
     border: none;
     outline: none;
     border-bottom: 1px solid #828282;
@@ -245,16 +252,23 @@ hr {
 }
 
 #footer, #header-date {
-    font-family: "Caravan";
+    font-family: "Czizh";
     margin: auto;
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 100;
+    text-align: center;
+}
+
+#footer {
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 #header-date {
     font-weight: 400;
-    margin-bottom: 50px;
-    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .form-example {
@@ -347,11 +361,15 @@ input[type='checkbox']:checked + .label-for-check::before{
     }
 
     #footer{
-        font-size: calc(30px + (100 - 30) * ((100vw - 320px) / (1200 - 320)));       
+        font-size: calc(20px + (60 - 20) * ((100vw - 320px) / (1200 - 320)));
+        margin-bottom: calc(5px + (30 - 5) * ((100vw - 320px) / (1200 - 320)));
+        margin-top: calc(5px + (30 - 5) * ((100vw - 320px) / (1200 - 320)));         
     }
 
     #header-date {
-        font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (1200 - 320)));       
+        font-size: calc(20px + (60 - 20) * ((100vw - 320px) / (1200 - 320))); 
+        margin-bottom: calc(5px + (30 - 5) * ((100vw - 320px) / (1200 - 320)));
+        margin-top: calc(5px + (30 - 5) * ((100vw - 320px) / (1200 - 320)));  
     }
 
     .header {
@@ -410,6 +428,11 @@ input[type='checkbox']:checked + .label-for-check::before{
     .form-example {
         margin: calc(10px + (50 - 10) * ((100vw - 320px) / (1200 - 320)));
     }
+
+    #zags {
+        width: calc(50% + (25 - 50) * ((100vw - 320px) / (700 - 320)));
+
+            }
 
 }
 
