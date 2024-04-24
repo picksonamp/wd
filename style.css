@@ -166,7 +166,12 @@ hr {
    
 }
 
-#zags {
+#the-most-pic {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.zags {
     width: 25%;
     border-radius: 50%;
 }
@@ -252,7 +257,7 @@ hr {
 }
 
 #footer, #header-date {
-    font-family: "Czizh";
+    font-family: "Czizh" !important;
     margin: auto;
     font-size: 60px;
     font-weight: 100;
@@ -417,7 +422,7 @@ input[type='checkbox']:checked + .label-for-check::before{
     }  
 
     #headerDiv{
-        margin-bottom: calc(0px + (30 - 0) * ((100vw - 320px) / (1200 - 320)));
+        margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1200 - 320)));
     }
     
     .blocks {
@@ -429,7 +434,7 @@ input[type='checkbox']:checked + .label-for-check::before{
         margin: calc(10px + (50 - 10) * ((100vw - 320px) / (1200 - 320)));
     }
 
-    #zags {
+    .zags {
         width: calc(50% + (25 - 50) * ((100vw - 320px) / (700 - 320)));
 
             }
