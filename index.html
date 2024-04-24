@@ -27,7 +27,7 @@
 
           <div id="headerDiv">
             
-            <h1 class="header-mini" id="header-date">5 июля 2024 года</h1>
+            <h1  id="header-date">5 июля 2024 года</h1>
             
           </div>
 
@@ -135,8 +135,8 @@
                 <form class="form-example">
 
                     <div class="form-example">
-                        <label for="name" class="question-text" >Введите свое имя: </label>
-                        <input type="text" name="name" id="name" required placeholder="Введите имя..."/>
+                        <label for="name" class="question-text" >Введите имя и фамилию: </label>
+                        <input type="text" name="name" id="name" required placeholder="Введите имя и фамилию..."/>
                     </div>
 
                     <div class="form-example">
@@ -245,6 +245,18 @@
 
         
     </div>
+         <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "a2MSpsy_QnfnXQw27",
+            });
+        })();
+        </script>
+
     <script src="script.js"></script>
 </body>
 </html>
