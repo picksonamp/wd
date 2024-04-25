@@ -469,7 +469,7 @@ input {
     padding-left: 0px;
     }
     
-input[type=text], input[type=button], input[type=submit] {
+input[type=text]{
 -webkit-appearance: none;
 -webkit-border-radius: 0;
 
