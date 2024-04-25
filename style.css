@@ -462,5 +462,14 @@ input[type='checkbox']:checked + .label-for-check::before{
           }
 }
 
+input {
+    border-radius: 0;
+    }
+    
+input[type=text], input[type=button], input[type=submit] {
+-webkit-appearance: none;
+-webkit-border-radius: 0;
+
+}
 
   
