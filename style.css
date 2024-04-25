@@ -195,7 +195,7 @@ p, a, label, input {
 
 #name {
     background-color: rgba(0, 0, 0, 0);
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
     width: 250px;
     border: none;
     outline: none;
@@ -262,7 +262,7 @@ p, a, label, input {
     outline: none;
     width: 250px;
     background-color: rgba(0, 0, 0, 0);
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
     border: none;
     border-bottom: 1px solid #828282;
     font-size: 19px;
