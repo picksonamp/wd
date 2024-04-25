@@ -29,7 +29,9 @@ end = end.getTime()
 setInterval(() => {
 
     let start = Date.now()
-    
+   
+    // let start = new Date('2024-07-05T15:45:01.417')
+    if (start >= end) start = end
 
     let days = Math.trunc((end - start) / 1000 / 60 / 60 / 24)
     let hours = Math.trunc((end - start) / 1000 / 60 / 60)

@@ -18,7 +18,7 @@
 /* СТИЛИЗАЦИЯ ССЫЛОК */
 
 a{
-    text-decoration: underline;
+    text-decoration: solid underline rgb(137, 137, 137) 1px;
     color: #000000;
 }
 
@@ -413,13 +413,13 @@ input[type='checkbox']:checked + .label-for-check::before{
     }
 
     #name {
-        width: calc(125px + (250 - 125) * ((100vw - 320px) / (1200 - 320)));
+        /* width: calc(125px + (250 - 125) * ((100vw - 320px) / (1200 - 320))); */
         font-size: calc(13px + (19 - 13) * ((100vw - 320px) / (1200 - 320)));
     }
 
-    .massive-text, .div-image-text {
-        margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320)));        
-    }  
+    /* .massive-text, .div-image-text {
+         margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320)));         
+     }   */ 
 
     #headerDiv{
         margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1200 - 320)));
@@ -438,6 +438,7 @@ input[type='checkbox']:checked + .label-for-check::before{
         width: calc(50% + (25 - 50) * ((100vw - 320px) / (700 - 320)));
 
             }
+    
 
 }
 
@@ -445,9 +446,18 @@ input[type='checkbox']:checked + .label-for-check::before{
     .div-image-text {
         flex-direction: column-reverse;
         text-align: center;
-    }
-    
+    }    
 }
+
+@media (max-width: 700px) {
+    body {
+        background-image: url(background2.jpg);        
+          }
+}
+
+
+
+
 
 /* 123 */
 
