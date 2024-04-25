@@ -24,6 +24,13 @@ a{
     color: #000000;
 }
 
+a::after{
+    content: url('maps.png');
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+}
+
 a:visited{
     color: gray;
 }
@@ -371,7 +378,7 @@ input[type='checkbox']:checked + .label-for-check::before{
 @media (max-width: 1200px) {
 
     * {
-        font-size: calc(13px + (19 - 13) * ((100vw - 320px) / (1200 - 320)));
+        font-size: calc(14px + (19 - 14) * ((100vw - 320px) / (1200 - 320)));
     }
 
     body {
@@ -433,7 +440,7 @@ input[type='checkbox']:checked + .label-for-check::before{
      .massive-text, .div-image-text {
          margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320))); 
          /* font-size: calc(13px + (19 - 13) * ((100vw - 320px) / (1200 - 320)));        */
-         font-size: 19px;
+         
      }   
 
   
@@ -488,7 +495,7 @@ input[type='checkbox']:checked + .label-for-check::before{
             padding-left: 10px;
             background-color: #ffffff;
             width: 100%;
-            font-size: calc(13.4px + (19 - 13.4) * ((100vw - 320px) / (1200 - 320)));
+            font-size: calc(14px + (19 - 14) * ((100vw - 320px) / (500 - 320)));
     }          
 }
 
