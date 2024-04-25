@@ -20,7 +20,7 @@
 /* СТИЛИЗАЦИЯ ССЫЛОК */
 
 a{
-    text-decoration: solid underline rgba(137, 137, 137, 0.5) 0.5px;
+    text-decoration: solid underline rgba(137, 137, 137, 0.5) 0.5px !important;
     color: #000000;
 }
 
@@ -495,7 +495,7 @@ input[type='checkbox']:checked + .label-for-check::before{
             padding-left: 10px;
             background-color: #ffffff;
             width: 100%;
-            font-size: calc(14px + (19 - 14) * ((100vw - 320px) / (500 - 320)));
+            font-size: calc(13px + (19 - 13) * ((100vw - 320px) / (500 - 320)));
     }          
 }
 
