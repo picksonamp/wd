@@ -1,23 +1,6 @@
 
 const url = 'https://raw.githubusercontent.com/picksonamp/wd/main/json.json'
 
-function sendRequest(url){
-  
-    return fetch(url)
-    .then(response => {return response.json()})
-}
-
-function postRequest(method, url, body){
-  
-    return fetch(method, url, {
-        method: method,
-        body: JSON.stringify(body),
-        headers: {}
-    })
-    .then(response => {return response.json()})
-}
-
-
 
 let i = 0;
 
@@ -102,16 +85,6 @@ setInterval(() => {
 }
 , 1000)
 
-// const vines = {
-//     redDry: '',
-//     redSemi: '',
-//     whiteDry: '',
-//     whiteSemi: '',
-//     vodka: '',
-//     shamp: '',
-//     alcFree: '',
-// }
-
 sendButton.onclick = () => {     
 
     let name = document.getElementById('name').value
@@ -150,19 +123,10 @@ sendButton.onclick = () => {
 
     emailjs.send('service_ohydsyk',"template_3p29qxi", parms).then(alert('Данные отправлены!'))
 
-    // postRequest('POST', url, result)
-    // .then(data => console.log(data))
-
-    // sendRequest(url)
-    // .then(data => console.log(data))
-  
-    
+      
     console.log(localStorage)
 
-    // alert('Данные отправлены!')
-
-    
-    
+   
 
 }
 

@@ -33,7 +33,7 @@ a:hover {
 body {
     max-width: 75%;
     margin: auto;
-    background-image: url(background.jpg);
+    background-image: url(background3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -413,13 +413,16 @@ input[type='checkbox']:checked + .label-for-check::before{
     }
 
     #name {
-        /* width: calc(125px + (250 - 125) * ((100vw - 320px) / (1200 - 320))); */
+        width: calc(175px + (250 - 175) * ((100vw - 320px) / (1200 - 320)));
         font-size: calc(13px + (19 - 13) * ((100vw - 320px) / (1200 - 320)));
     }
 
-    /* .massive-text, .div-image-text {
-         margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320)));         
-     }   */ 
+     .massive-text, .div-image-text {
+         margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320))); 
+         font-size: calc(13px + (19 - 13) * ((100vw - 320px) / (1200 - 320)));       
+     }   
+
+  
 
     #headerDiv{
         margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1200 - 320)));
@@ -435,40 +438,29 @@ input[type='checkbox']:checked + .label-for-check::before{
     }
 
     .zags {
-        width: calc(50% + (25 - 50) * ((100vw - 320px) / (700 - 320)));
+        width: calc(40% + (10 - 40) * ((100vw - 320px) / (700 - 320)));
 
             }
+    
+    .border-line-div {
+        height: calc(0px + (62 - 0) * ((100vw - 320px) / (1200 - 320)));
+    }
     
 
 }
 
 @media (max-width: 800px) {
     .div-image-text {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
         text-align: center;
     }    
 }
 
 @media (max-width: 700px) {
     body {
-        background-image: url(background2.jpg);        
+        background-image: url(background4.jpg);        
           }
 }
 
 
-
-
-
-/* 123 */
-
-
-  button,input,optgroup,select,textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-  }
-  button,input {
-    overflow: visible;
-  }
   
