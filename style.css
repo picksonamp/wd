@@ -172,7 +172,9 @@ hr {
 }
 
 .zags {
-    width: 25%;
+    /* width: 25%; */
+    /* min-width: 170px !important; */
+    max-width: 200px;
     border-radius: 50%;
 }
 
@@ -437,10 +439,10 @@ input[type='checkbox']:checked + .label-for-check::before{
         margin: calc(10px + (50 - 10) * ((100vw - 320px) / (1200 - 320)));
     }
 
-    .zags {
-        width: calc(40% + (10 - 40) * ((100vw - 320px) / (700 - 320)));
+    /* .zags {
+        width: calc(50% + (25 - 50) * ((100vw - 320px) / (1800 - 320)));
 
-            }
+            } */
     
     .border-line-div {
         height: calc(0px + (62 - 0) * ((100vw - 320px) / (1200 - 320)));
@@ -464,6 +466,7 @@ input[type='checkbox']:checked + .label-for-check::before{
 
 input {
     border-radius: 0;
+    padding-left: 0px;
     }
     
 input[type=text], input[type=button], input[type=submit] {
