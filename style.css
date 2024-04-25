@@ -160,7 +160,7 @@ hr {
 }
 
 p, a, label, input {
-    font-family: "Montserrat", sans-serif 
+    font-family: "Montserrat", sans-serif; 
 }
 
 .div-image-text {
@@ -195,7 +195,7 @@ p, a, label, input {
 
 #name {
     background-color: rgba(0, 0, 0, 0);
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     width: 250px;
     border: none;
     outline: none;
@@ -215,7 +215,8 @@ p, a, label, input {
     border: none;
     border-radius: 5px;
     color: white;
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
     text-align: center;
     padding: 10px 20px, 10px, 20px;
     cursor: pointer;
@@ -261,7 +262,7 @@ p, a, label, input {
     outline: none;
     width: 250px;
     background-color: rgba(0, 0, 0, 0);
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     border: none;
     border-bottom: 1px solid #828282;
     font-size: 19px;
@@ -419,10 +420,10 @@ input[type='checkbox']:checked + .label-for-check::before{
         font-size: calc(13px + (19 - 13) * ((100vw - 320px) / (1200 - 320)));
     } */
 
-    #sendButton {        
+    /* #sendButton {        
         width: calc(95px + (140 - 95) * ((100vw - 320px) / (1200 - 320)));
         height: calc(35px + (60 - 35) * ((100vw - 320px) / (1200 - 320)));
-    }
+    } */
 
     /* #name {
         width: calc(175px + (250 - 175) * ((100vw - 320px) / (1200 - 320)));
