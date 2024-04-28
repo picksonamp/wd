@@ -121,7 +121,8 @@ sendButton.onclick = () => {
         message: reultVines,
     }
 
-    emailjs.send('service_ohydsyk',"template_3p29qxi", parms).then(alert('Данные отправлены!'))
+    emailjs.send('service_ohydsyk',"template_3p29qxi", parms).then(
+        ((document.getElementById('presense').checked)) ? alert(`Спасибо за ответ! Будем вас ждать!`) : alert('Спасибо за ответ! Очень жаль, что у Вас не получиться!'))
 
       
     console.log(localStorage)
