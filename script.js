@@ -34,7 +34,7 @@ setInterval(() => {
         case 0: document.getElementById('daysIndex').innerHTML = 'ДНЕЙ'; break;
     }
 
-    switch (hours % 10) { 
+    switch ((hours - (days * 24)) % 10) { 
         case 1: document.getElementById('hoursIndex').innerHTML = 'ЧАС'; break;
         case 2:
         case 3:
@@ -81,6 +81,8 @@ setInterval(() => {
     document.getElementById('hours').innerHTML = hours - (days * 24)
     document.getElementById('minutes').innerHTML = minutes - (hours * 60)
     document.getElementById('seconds').innerHTML = seconds - (minutes * 60)
+
+    console.log((hours - (days * 24)) % 10)
     
 }
 , 1000)
